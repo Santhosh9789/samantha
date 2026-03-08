@@ -74,10 +74,6 @@ yesBtn.addEventListener('click', () => {
         confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
     }, 250);
 
-    // B. Screen Crack Effect
-    const crack = document.getElementById('crack-overlay');
-    crack.classList.add('active');
-    
     // Optional: add a haptic feel (if browser supports it)
     if (window.navigator.vibrate) {
         window.navigator.vibrate([100, 50, 200]);
